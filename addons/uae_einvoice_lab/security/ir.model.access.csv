@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+ue_provider_user,ue_provider user,model_ue_provider,uae_einvoice_lab.group_user,1,0,0,0
+ue_provider_manager,ue_provider manager,model_ue_provider,uae_einvoice_lab.group_manager,1,1,1,1
+ue_document_user,ue_document user,model_ue_document,uae_einvoice_lab.group_user,1,0,0,0
+ue_document_manager,ue_document manager,model_ue_document,uae_einvoice_lab.group_manager,1,1,1,0
+ue_transmission_user,ue_transmission user,model_ue_transmission,uae_einvoice_lab.group_user,1,0,0,0
+ue_transmission_manager,ue_transmission manager,model_ue_transmission,uae_einvoice_lab.group_manager,1,0,0,0

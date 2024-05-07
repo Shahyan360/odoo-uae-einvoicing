@@ -1,0 +1,5 @@
+<odoo>
+<record id="ue_provider_company" model="ir.rule"><field name="name">ue_provider company boundary</field><field name="model_id" ref="model_ue_provider"/><field name="domain_force">[('company_id', 'in', company_ids)]</field></record>
+<record id="ue_document_company" model="ir.rule"><field name="name">ue_document company boundary</field><field name="model_id" ref="model_ue_document"/><field name="domain_force">[('company_id', 'in', company_ids)]</field></record>
+<record id="ue_transmission_company" model="ir.rule"><field name="name">ue_transmission company boundary</field><field name="model_id" ref="model_ue_transmission"/><field name="domain_force">[('company_id', 'in', company_ids)]</field></record>
+</odoo>

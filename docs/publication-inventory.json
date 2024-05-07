@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-28",
+  "project": "08-UAE-EInvoicing-Peppol",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "bytes": 31,
+      "sha256": "46cd4f885de55ea9d7df929f1aec7ecc39f9f6741a8957f1dd87b876e6bb1cd9"
+    },
+    {
+      "path": ".env.example",
+      "bytes": 487,
+      "sha256": "64b6f991e7247c0f742e037de7a6b5b0a09943cb89e0ae9174fffef99c2b745a"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 317,
+      "sha256": "6aba688207846b67a565fe4047449842b6ee9f61ecfe2a6ca4290f233895c1cd"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 43880,
+      "sha256": "f6c2e871332e4d0139fe7dce41725fb245f0735aa25fd62835de34f057b530a8"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2731,
+      "sha256": "135b8a2e590079442c631824df7b1ad249055226cf5dbc7eefc46e473a789ee9"
+    },
+    {
+      "path": "addons/uae_einvoice_lab/__init__.py",
+      "bytes": 22,
+      "sha256": "e7f646db385de3561532169583a9437aa771a7d75ff1843251d0c618925ecd55"
+    },
+    {
+      "path": "addons/uae_einvoice_lab/__manifest__.py",
+      "bytes": 446,
+      "sha256": "b412985c495bfd3aaa50c332ba7549038398310d92d0179acbe997b66d68f67b"
+    },
+    {
+      "path": "addons/uae_einvoice_lab/common.py",
+      "bytes": 1833,
+      "sha256": "9276ea7658cd8a0a02b3d4976447fbdec714963cc2d64c4bb41afa893f1d8835"
+    },
+    {
+      "path": "addons/uae_einvoice_lab/data/cron.xml",
+      "bytes": 427,
+      "sha256": "812dcc725046e3109cfbbe553d03274e5627eb83c7b9c2ce1ba9dbd43c19ec32"
+    },
+    {
+      "path": "addons/uae_einvoice_lab/demo/fixtures.xml",
+      "bytes": 724,
+      "sha256": "dba4d9b80db2a1ab558321e7ce9df46dfe451fce50db8d2ca92bdeea8db6f1b5"
+    },
+    {
+      "path": "addons/uae_einvoice_lab/models/__init__.py",
+      "bytes": 26,
+      "sha256": "2c7160cafca973286dc252f27bb176eb0dbe5ee45d4cb87116dac9b296fec0a5"
+    },
+    {
+      "path": "addons/uae_einvoice_lab/models/operations.py",
+      "bytes": 25437,
+      "sha256": "63d5c13fa05eabf229b92afdbceaf9bc9e069ff6ffff4ad0defffcc66357cc62"
+    },
+    {
+      "path": "addons/uae_einvoice_lab/security/groups.xml",
+      "bytes": 564,
+      "sha256": "735dca1dd86e6b02944b8bc23d9a7239b46a44f401092c503a76751337bafd77"
+    },
+    {
+      "path": "addons/uae_einvoice_lab/security/ir.model.access.csv",
+      "bytes": 663,
+      "sha256": "b5c0846f0a861d4fc5f10551ce3e3c38083b6c63eb3c2574e802e1717e0854da"
+    },
+    {
+      "path": "addons/uae_einvoice_lab/security/rules.xml",
+      "bytes": 728,
+      "sha256": "7f7493aabe1ae81766926fe2904caddd6508590f70b2c44cbd70a461d574ef58"
+    },
+    {
+      "path": "addons/uae_einvoice_lab/views/account.xml",
+      "bytes": 1429,
+      "sha256": "3abfce38971e3ed55a2e830410696aca20950fc504f29f80807f7fcdb9b999a4"
+    },
+    {
+      "path": "addons/uae_einvoice_lab/views/operations.xml",
+      "bytes": 3472,
+      "sha256": "7ca71c91972840460e6a3b0519526080e7dc6177a8f87be68100b962b3bb3b5f"
+    },
+    {
+      "path": "docker/Dockerfile",
+      "bytes": 127,
+      "sha256": "f4904598fbf58163a6a22e95b6d45cf526a39fe9b7df185ea5a6a51d60ce8b2d"
+    },
+    {
+      "path": "docker/compose.yaml",
+      "bytes": 1504,
+      "sha256": "9357bd020304a79875152d13af6a875bb5865305edd88275ed38347541bbc7a6"
+    },
+    {
+      "path": "docker/images.lock.json",
+      "bytes": 340,
+      "sha256": "70c816ea3a9dd663e882a70c7c0bef020a407434d50d22336a911b27d822eb75"
+    },
+    {
+      "path": "docs/FEATURES.md",
+      "bytes": 2045,
+      "sha256": "a7955fb0822e24ceecfc6a09827c7f6dd8e0196685786f8441e18b9094763a6a"
+    },
+    {
+      "path": "docs/SCHEMA_SETUP.md",
+      "bytes": 1671,
+      "sha256": "636480d680580946a5ed807c7e960dedeb59c91acf7e71ed162476ddbe196f54"
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "bytes": 831,
+      "sha256": "083f33615715caeee1122ee365051cfdaed36e8e233a252db9432b92afd7f88a"
+    },
+    {
+      "path": "requirements-extra.txt",
+      "bytes": 18,
+      "sha256": "f31445c1799079494d3b29dded8e8121d33bf4ebe7fed4f95a9dccc0fb4e3d5e"
+    },
+    {
+      "path": "scripts/bootstrap.py",
+      "bytes": 1391,
+      "sha256": "c3b85b949f19564a6937ec77f5c41c5e3fc2efd86f078e9e86e3f0fd3b23ee46"
+    },
+    {
+      "path": "scripts/lab.ps1",
+      "bytes": 1319,
+      "sha256": "f1ea016115e080c3836268f71ddc5919f6fac9b8711aff383ab3fdc98470050f"
+    },
+    {
+      "path": "scripts/publication_audit.py",
+      "bytes": 7029,
+      "sha256": "f0166f392e5abfd13f183db6f257e7d64ff2e122d0db12cbf76724246a721c5f"
+    },
+    {
+      "path": "scripts/seed.py",
+      "bytes": 533,
+      "sha256": "915b578e35b095db7ddc0427f923ce212317094c5d6a3d6823a9f2e679744485"
+    }
+  ],
+  "excluded": [],
+  "symlinks": [],
+  "findings": []
+}

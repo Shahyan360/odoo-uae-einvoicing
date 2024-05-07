@@ -1,0 +1,52 @@
+name: personal-lab-08
+services:
+  db:
+    image: ${POSTGRES_IMAGE:?Run bootstrap first}
+    environment:
+      POSTGRES_USER: lab
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Run bootstrap first}
+      POSTGRES_DB: postgres
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U lab -d postgres]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    networks: [lab]
+  mailpit:
+    image: ${MAILPIT_IMAGE:?Run bootstrap first}
+    ports: [127.0.0.1:8028:8025]
+    networks: [lab]
+  odoo:
+    image: personal-einvoice-lab:local
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+      args:
+        ODOO_IMAGE: ${ODOO_IMAGE:?Run bootstrap first}
+    env_file: [../.env]
+    environment:
+      ODOO_RC: /etc/odoo/odoo.conf
+    depends_on:
+      db:
+        condition: service_healthy
+    ports: [127.0.0.1:8178:8069]
+    volumes:
+      - ../addons:/mnt/extra-addons:ro
+      - ../scripts:/opt/lab-scripts:ro
+      - ../.local/odoo.conf:/etc/odoo/odoo.conf:ro
+      - ../.local/credentials.json:/run/lab-credentials.json:ro
+      - ../.local/schemas:/opt/lab-schemas:ro
+      - filestore:/var/lib/odoo
+    healthcheck:
+      test: [CMD, python3, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8069/web/login', timeout=5)"]
+      interval: 15s
+      timeout: 8s
+      retries: 20
+    networks: [lab]
+volumes:
+  pgdata:
+  filestore:
+networks:
+  lab:
+    internal: true
